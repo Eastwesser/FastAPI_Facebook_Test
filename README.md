@@ -1,6 +1,7 @@
 # FastAPI Facebook Messenger API
 
-This is a simple project that integrates FastAPI with the Facebook Messenger API. The application allows sending text and media messages to users on Facebook Messenger using the official API.
+This is a simple project that integrates FastAPI with the Facebook Messenger API. 
+The application allows sending text and media messages to users on Facebook Messenger using the official API.
 
 ## Features
 - Send text messages to Facebook Messenger users.
@@ -38,7 +39,7 @@ Before running this project, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Eastwesser/fastapi-facebook-messenger-api.git
+git clone https://github.com/Eastwesser/FastAPI_Facebook_Test.git
 cd fastapi-facebook-messenger-api
 ```
 
