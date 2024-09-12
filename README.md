@@ -40,7 +40,7 @@ Before running this project, ensure you have the following installed:
 1. Clone the repository:
 ```bash
 git clone https://github.com/Eastwesser/FastAPI_Facebook_Test.git
-cd fastapi-facebook-messenger-api
+cd FastAPI_Facebook_Test
 ```
 
 2. Create a virtual environment:
