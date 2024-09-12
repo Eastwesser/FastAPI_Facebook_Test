@@ -16,7 +16,7 @@ This is a simple project that integrates FastAPI with the Facebook Messenger API
 ## Project Structure
 
 ```bash
-.
+FastAPI_Facebook_Test
 ├── app
 │   ├── __init__.py
 │   ├── main.py          # Main application file
