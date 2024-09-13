@@ -28,6 +28,9 @@ class MessengerAPI:
             ) as response:
                 return await response.json()
 
+    async def send_text_message(self, recipient_id: str, text: str) -> dict:
+        return await self.send_message(recipient_id, text)
+
     async def send_media_message(self, recipient_id: str, media_url: str, media_type: str) -> dict:
         payload = Message(
             recipient=Recipient(id=recipient_id),
@@ -44,6 +47,3 @@ class MessengerAPI:
                     json=payload,
             ) as response:
                 return await response.json()
-
-    async def send_text_message(self, recipient_id: str, text: str) -> dict:
-        return await self.send_message(recipient_id, text)
