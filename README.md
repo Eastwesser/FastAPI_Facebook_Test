@@ -5,7 +5,7 @@ The application allows sending text and media messages to users on Facebook Mess
 
 ## Features
 - Send text messages to Facebook Messenger users.
-- Send media messages (images, videos, etc.) via Facebook Messenger.
+- Send media messages (images, videos) via Facebook Messenger.
 
 ## Technologies Used
 - FastAPI: A modern web framework for building APIs with Python.
@@ -94,6 +94,31 @@ Example Request:
   "text": "Hello, this is a test message!"
 }
 ```
+Example Response:
+```json
+{
+  "recipient_id": "1234567890",
+  "message_id": "mid.$cAAD..."
+}
+```
+
+3. Send Media Message (/send-media-message/)
+Method: POST
+Description: Send a media message (e.g., image, video) to a user on Facebook Messenger.
+Request Parameters:
+- recipient_id (string): The Facebook user ID of the recipient.
+- media_url (string): URL of the media to send.
+- media_type (string): Type of media (e.g., image, video).
+
+Example Request:
+```json
+{
+  "recipient_id": "1234567890",
+  "media_url": "https://example.com/image.jpg",
+  "media_type": "image"
+}
+```
+
 Example Response:
 ```json
 {
